@@ -37,19 +37,6 @@ SmartFix is a full-stack AI-powered maintenance management system that automates
 
 ---
 
-## 📁 Project Structure
-
-SmartFix/
-├── frontend/        
-├── backend/         
-├── ai-model/        
-│   ├── train.py
-│   ├── app.py
-│   └── model.keras
-└── README.md
-
----
-
 ## ⚙️ Setup Instructions
 
 ### 1. Clone Repository
