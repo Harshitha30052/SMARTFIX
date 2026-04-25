@@ -40,9 +40,9 @@ SmartFix is a full-stack AI-powered maintenance management system that automates
 ## 📁 Project Structure
 
 SmartFix/
-├── frontend/        (React App)
-├── backend/         (Node.js + Express + MongoDB)
-├── ai-model/        (ML Model + Flask API)
+├── frontend/        
+├── backend/         
+├── ai-model/        
 │   ├── train.py
 │   ├── app.py
 │   └── model.keras
