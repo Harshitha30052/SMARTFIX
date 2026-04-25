@@ -1,6 +1,26 @@
+# Node
 node_modules/
+
+# Python cache
 __pycache__/
 *.pyc
+
+# Virtual environment
+venv/
+env/
+ai-model/venv/
+
+# Environment variables
 .env
+
+# Uploads & datasets
 uploads/
 dataset/
+
+# ML model files
+*.h5
+*.keras
+
+# System files
+.DS_Store
+Thumbs.db
