@@ -19,7 +19,7 @@ SmartFix is a full-stack AI-powered maintenance management system that automates
 
 **Frontend:**
 - React.js
-- HTML, CSS, JavaScript
+- Tailwind CSS (for styling)
 
 **Backend:**
 - Node.js
