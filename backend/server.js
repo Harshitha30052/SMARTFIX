@@ -10,7 +10,7 @@ const app = express();
 // Middleware
 //app.use(cors());
 app.use(cors({
-    origin: "https://smartfix-frontend.onrender.com",
+    origin: "https://smartfix-ui.onrender.com",
     credentials: true
 }));
 app.use(express.json());
@@ -37,7 +37,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
         //origin: "*",
-        origin:"https://smartfix-frontend.onrender.com",
+        origin:"https://smartfix-ui.onrender.com",
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
 });
