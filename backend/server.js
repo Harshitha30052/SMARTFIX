@@ -8,7 +8,11 @@ require("dotenv").config();
 const app = express();
 
 // Middleware
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+    origin: "https://smartfix-frontend.onrender.com",
+    credentials: true
+}));
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/complaints", complaintRoutes);
@@ -32,7 +36,8 @@ const { Server } = require("socket.io");
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "*",
+        //origin: "*",
+        origin:"https://smartfix-frontend.onrender.com",
         methods: ["GET", "POST", "PUT", "DELETE"]
     }
 });
