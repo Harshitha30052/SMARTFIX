@@ -13,8 +13,8 @@ function App() {
     const [toast, setToast] = useState(null); // { message, type }
 
     useEffect(() => {
-        //const socket = io("http://localhost:5000");
-        const socket = io(process.env.VITE_API_URL);
+        const socket = io("http://localhost:5000");
+        //const socket = io(process.env.VITE_API_URL);
         socket.on("complaintUpdated", (data) => {
             if (data?.message) {
                 setToast({ message: data.message, type: data.status === "Resolved" ? "success" : "info" });
