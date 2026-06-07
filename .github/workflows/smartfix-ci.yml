@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: npm install
 
       - run: npm run build
 
@@ -42,7 +42,7 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: npm install
 
   ai-model:
     needs: backend
@@ -59,4 +59,4 @@ jobs:
         with:
           node-version: 20
 
-      - run: npm ci
+      - run: npm install
