@@ -1,130 +1,225 @@
-# 🛠️ SmartFix – AI Enabled Maintenance Management System
+# SmartFix – AI Enabled Maintenance Management System
 
-SmartFix is a full-stack AI-powered maintenance management system that automates issue detection, classification, and technician assignment using image-based machine learning. It integrates real-time communication and scalable backend services for efficient complaint handling.
+SmartFix is an AI-powered maintenance management system developed as a team project to automate complaint handling and improve maintenance workflows.
 
----
-
-## 🚀 Features
-
-- AI-based issue detection using CNN (TensorFlow + MobileNetV2)
-- Image-based classification (Carpentry, Electrical, Plumbing)
-- Automatic technician assignment based on issue category
-- Real-time updates using Socket.io
-- Complaint tracking and management system
-- Full-stack integration (React + Node.js + MongoDB + AI model)
+The system uses image-based machine learning to detect and classify maintenance issues and automatically support technician assignment. It also provides real-time updates and complaint tracking through full-stack integration.
 
 ---
 
-## 🧑‍💻 Tech Stack
+## Project Overview
 
-**Frontend:**
-- React.js
-- Tailwind CSS (for styling)
+The main objective of this project was to reduce manual complaint management by identifying maintenance issues directly from uploaded images and streamlining the service process.
 
-**Backend:**
-- Node.js
-- Express.js
-- Socket.io
-
-**AI Model:**
-- Python
-- TensorFlow / Keras
-- MobileNetV2 (Transfer Learning)
-- Flask API
-
-**Database:**
-- MongoDB Atlas
+The system allows users to submit complaints, upload images, receive issue classification results, and monitor complaint progress through an integrated platform.
 
 ---
 
-## ⚙️ Setup Instructions
+## Features
+
+* AI-based issue detection using image classification
+* Classification of maintenance issues:
+
+  * Carpentry
+  * Electrical
+  * Plumbing
+* Automatic technician assignment
+* Complaint tracking and management
+* Real-time updates using Socket.io
+* Full-stack integration for seamless communication
+
+---
+
+## Technologies Used
+
+### Frontend
+
+* React.js
+* Tailwind CSS
+
+### Backend
+
+* Node.js
+* Express.js
+* Socket.io
+
+### AI Module
+
+* Python
+* TensorFlow
+* Keras
+* MobileNetV2 (Transfer Learning)
+* Flask API
+
+### Database
+
+* MongoDB Atlas
+
+---
+
+## Team Contribution
+
+This project was developed collaboratively as a team project.
+
+The team contributed to:
+
+* Frontend development and UI design
+* Backend API development
+* AI model training and integration
+* Database connectivity and management
+* Real-time communication implementation
+* Testing and debugging across modules
+
+---
+
+## Setup Instructions
 
 ### 1. Clone Repository
-git clone https://github.com/your-username/SmartFix.git  
-cd SmartFix  
+
+git clone YOUR_REPOSITORY_URL
+
+cd SmartFix
 
 ---
 
 ### 2. Backend Setup
-cd backend  
-npm install  
-node server.js  
+
+cd backend
+
+npm install
+
+node server.js
 
 ---
 
 ### 3. Frontend Setup
-cd frontend  
-npm install  
-npm start  
+
+cd frontend
+
+npm install
+
+npm start
 
 ---
 
-### 4. AI Model Setup
+### 4. AI Module Setup
 
 Install dependencies:
-cd ai-model  
-pip install tensorflow flask pillow numpy  
+
+pip install tensorflow flask pillow numpy
 
 Train model:
-python train.py  
 
-Run Flask API:
-python app.py  
+python train.py
 
----
+Run prediction service:
 
-## 📸 Dataset Structure
-
-dataset/
-├── carpentry/
-├── electrical/
-└── plumbing/
-
-Each folder should contain images for training.
+python app.py
 
 ---
 
-## 🔗 API Endpoint
+## Project Structure
 
-**POST /predict**
+* **frontend/** – React frontend and user interface
+* **backend/** – APIs and server-side implementation
+* **ai-model/** – Machine learning model and prediction service
+* **uploads/** – Uploaded complaint images
+* **dataset/** – Training dataset
+* **model.keras** – Trained model
+* **.env** – Environment variables
+
+---
+
+## Dataset Information
+
+The dataset contains categorized maintenance issue images for training and testing.
+
+Categories:
+
+* Carpentry
+* Electrical
+* Plumbing
+
+---
+
+##  API Endpoint
+
+### POST /predict
 
 Input:
-- image (file upload)
+
+* Image upload
 
 Output:
+
 {
-  "category": "electrical",
-  "confidence": 0.92
+"category": "electrical",
+"confidence": 0.92
 }
 
 ---
 
-## 🧠 Model Details
+##  Model Details
 
-- Model: MobileNetV2 (Transfer Learning)
-- Input Size: 224 x 224
-- Classes: 3
-- Loss Function: Categorical Crossentropy
-- Optimizer: Adam
-
----
-
-## ⚠️ Important Notes
-
-- Do NOT upload node_modules/, venv/, dataset/ to GitHub
-- Keep model.keras inside ai-model folder
-- Configure MongoDB Atlas connection in .env file
-- Ensure uploads/ folder exists in backend
-- Add proper .gitignore before pushing
+* Model: MobileNetV2
+* Approach: Transfer Learning
+* Input Size: 224 × 224
+* Number of Classes: 3
+* Loss Function: Categorical Crossentropy
+* Optimizer: Adam
 
 ---
 
-## 📌 .gitignore
+## Challenges Faced
 
-node_modules/
-__pycache__/
-*.pyc
-.env
-uploads/
-dataset/
-venv/
+During development, the team worked through challenges including:
+
+* Integrating frontend with AI prediction services
+* Handling image preprocessing and classification
+* Managing communication between application modules
+* Improving response handling and prediction workflow
+* Coordinating integration across multiple technologies
+
+---
+
+## Debugging Process
+
+The team improved reliability by:
+
+* Testing API endpoints
+* Monitoring backend logs
+* Validating prediction results
+* Debugging integration issues
+* Performing end-to-end application testing
+
+---
+
+## Future Improvements
+
+* Cloud deployment for AI services
+* Authentication and authorization
+* Improved prediction accuracy
+* Notification system
+* Additional maintenance categories
+
+---
+
+## Learning Outcomes
+
+Through this project, the team gained practical experience in:
+
+* Machine Learning Integration
+* Transfer Learning
+* Full Stack Development
+* API Development
+* Real-Time Communication
+* System Integration
+
+---
+
+## Team Project
+
+This project was developed collaboratively to apply machine learning and full-stack development concepts to a real-world maintenance management scenario.
+
+## Author
+
+Harshitha Reddy
